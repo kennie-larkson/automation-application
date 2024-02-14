@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "ES6",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node16",
+    "allowSyntheticDefaultImports": true,
+    "module": "NodeNext"
+  },
+
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
