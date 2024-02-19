@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import { router } from "./router";
 
 class Application {
   public app: express.Application;
@@ -12,6 +13,7 @@ class Application {
 
   private initializeMiddlewares = () => {
     this.app.use(express.json());
+    this.app.use("/api/v1", router);
   };
 
   private home = () => {
