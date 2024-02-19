@@ -4,6 +4,7 @@
     "target": "ES6",
     "outDir": "./dist",
     "baseUrl": "./src",
+    "rootDirs": ["."],
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -12,6 +13,6 @@
     "module": "NodeNext"
   },
 
-  "include": ["src/**/*.ts"],
+  "include": ["**/*.ts", "knexfile.ts"],
   "exclude": ["node_modules"]
 }
